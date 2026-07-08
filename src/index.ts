@@ -5,7 +5,7 @@ const ids: number[] = cargarJugadores();
 let roster: number[] = [];
 
 export function estaEnRoster(roster: number[], id: number): boolean {
-  let esta: boolean = false; // COMPLETAR
+  let esta: boolean = false; 
 
 
 let cont: number=0;
@@ -23,11 +23,26 @@ while (cont<roster.length){
 
 export function agregarAlRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; // COMPLETAR
+  
+  let cont: number=0;
+  while (cont<nuevoRoster.length) {
+  nuevoRoster.push(roster[cont])
+   
+   cont++
+  }
+
+
   return nuevoRoster;
 }
 
+
+
 export function quitarDelRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; // COMPLETAR
+
+
+
+
   return nuevoRoster;
 }
 
