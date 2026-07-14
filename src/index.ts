@@ -30,7 +30,7 @@ export function agregarAlRoster(roster: number[], id: number): number[] {
    
    cont++
   }
-
+  nuevoRoster.push(id)
 
   return nuevoRoster;
 }
@@ -39,7 +39,15 @@ export function agregarAlRoster(roster: number[], id: number): number[] {
 
 export function quitarDelRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; // COMPLETAR
+let cont: number=0;
+ 
+  while (cont<nuevoRoster.length) {
+    if (cont != id){
 
+    nuevoRoster.push(roster[cont])
+   
+    cont++}
+  }
 
 
 
